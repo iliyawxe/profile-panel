@@ -18,34 +18,52 @@ body {
     overflow-wrap: break-word;
 }
 .row{
-    background-color: aqua;
+   
 
     width: 100%;
 }
 .col1{
-    background-color: darkred;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+    position: relative;
+    width: 100%;
+    border: 1px solid #fff;
+    box-shadow: 5px 5px #000;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.08s ease all;
+    border-radius: 7px;
+    background-color: #fff;
 }
 .col2{
+    position: absolute;
+    top: 14px;
+    right: 8px;
+    position: relative;
+    width: 100%;
+    border: 1px solid #000;
+    box-shadow: 5px 5px #000;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.08s ease all;
+    border-radius: 7px ;
  padding: 0 !important;
  
-
+    overflow: hidden;
 }
 .n1{
     margin: 0 !important;
-    background-color:blueviolet;
+    background-color:rgb(73, 63, 114);
+    color: #fff;
 
     width: 100%;
 }
 .n2{margin: 0 !important;
     color: aliceblue;
-    background-color:chocolate;
+
   
     width: 100%;
-}
-.m1{
-
-    background-color:rgb(222, 22, 118);
-    
 }
 .m2{
     background-color:rgb(151, 33, 147);
