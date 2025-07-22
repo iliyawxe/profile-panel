@@ -19,7 +19,8 @@ body>.container {
 }
 .row{
     width: 100%;
-}
+    overflow-wrap: break-word;
+  }
 .mytab{
     background-color:rgb(31, 31, 39) ;
     color: #fff;
