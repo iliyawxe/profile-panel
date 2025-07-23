@@ -60,7 +60,8 @@ body>.container {
 .form-group {
   position: relative;
 }
-input{
+.mytab input,
+.mytab textarea{
     position: absolute;
     position: relative;
     top: 14px;
@@ -72,7 +73,7 @@ input{
     border: 1px solid #000;
     padding: 4px;
 }
-label{
+.mylabel{
   position: absolute;
   right: 15px;
   top: 15px;
@@ -84,8 +85,17 @@ label{
   transition: 0.08s ease all;
   z-index: 1;
 }
-input:focus + label,
-input:not(:placeholder-shown) + label {
+input:focus + .mylabel,
+input:not(:placeholder-shown) + .mylabel {
+    top: 2px;
+    right: 18px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 4px;
+    background-color:rgb(31, 31, 39);
+  }
+textarea:focus + .mylabel,
+textarea:not(:placeholder-shown) + .mylabel {
     top: 2px;
     right: 18px;
     font-size: 12px;
@@ -144,4 +154,43 @@ input:not(:placeholder-shown) + label {
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+.form-check-input.form-check-input:not(:checked) {
+  background-color: #ccc;
+  border-color: #999;
+}
+.form-check-input.form-check-input:checked {
+  background-color: #023e7d;
+  border-color: #1bd8d8;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+}
+.form-check-label {
+  color: #fff;
+}
+.checkbx {
+  position: relative;
+}
+.checkbx2 {
+  position: absolute;
+  top: 13px;
+  right: 50px;
+}
+.dark{
+  position: absolute;
+  top: 14px;
+  right: 42px;
+}
+.light{
+  position: absolute;
+  top: 12px;
+  right: 42px;
+}
+.checkbx2:checked ~ .dark{
+ display: none;
+}
+.checkbx2:not(:checked) ~ .light{
+ display: none;
 }
