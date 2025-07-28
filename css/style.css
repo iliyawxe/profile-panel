@@ -50,7 +50,7 @@ body>.container {
   }
 .mytab{
     background:hsla(0, 0%, 100%, 0);
-    backdrop-filter:blur(5px);
+    backdrop-filter:blur(10px);
     color: #fff;
     position: absolute;
     top: 14px;
@@ -209,25 +209,30 @@ textarea:not(:placeholder-shown) + .mylabel {
 .dark{
   position: absolute;
   top: 14px;
-  right: 42px;
+  right: 46px;
 }
 .light{
   position: absolute;
   top: 12px;
-  right: 42px;
+  right: 46px;
 }
 .checkbx2:checked ~ .dark{
- display: none;
+  opacity: 0;
+  right: 60px;
+  transition: all 0.3s ease;
+
 }
 .checkbx2:not(:checked) ~ .light{
- display: none;
+  opacity: 0;
+  right: 60px;
+  transition: all 0.3s ease;
 }
 .tab-pane.fade {
   opacity: 0;
-  transform: translateY(-30px);
-  transition: all 0.1s ease;
+  transform: translateX(30px);
+  transition: all 0.12s ease;
 }
 .tab-pane.fade.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
