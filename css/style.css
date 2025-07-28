@@ -222,3 +222,12 @@ textarea:not(:placeholder-shown) + .mylabel {
 .checkbx2:not(:checked) ~ .light{
  display: none;
 }
+.tab-pane.fade {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.1s ease;
+}
+.tab-pane.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
