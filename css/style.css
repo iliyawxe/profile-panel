@@ -129,7 +129,7 @@ textarea:not(:placeholder-shown) + .mylabel {
     font-size: 12px;
     color: #fff;
     border-radius: 4px;
-    background-color:rgb(31, 31, 39);
+    background-color:rgb(16, 16, 41);
   }
 .profile-card {
 /*     width: 70%;
